@@ -18,5 +18,5 @@ export default defineConfig({
       quality: 11,
     },
   }),],
-  base: "/chat/"
+  base: "/vue-chat/"
 })
