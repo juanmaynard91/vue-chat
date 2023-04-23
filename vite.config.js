@@ -1,12 +1,14 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
-import compression from 'vite-plugin-compression'; //npm install vite-plugin-compression --save-dev para comprimir los archivos
+import compression from 'vite-plugin-compression';
+import cssnano from 'cssnano';
+import { terser } from 'rollup-plugin-terser';
 
 export default defineConfig({
-  plugins: [vue(),
+  plugins: [vue(), terser(), cssnano(),
   compression({
-    ext: '.br, .js, .css, .html, .svg', // Utiliza el algoritmo de compresión Brotli
+    ext: '.br, .js, .css, .html, .svg',
     threshold: 10240,
     gzip: {
       flush: require('zlib').constants.Z_SYNC_FLUSH

@@ -38,49 +38,5 @@ const enviarMensaje = async () => {
 </script>
 
 <style>
-.footer {
-  bottom: 0;
-  align-items: center;
-  display: flex;
-  font-size: 2rem;
-  height: 4rem;
-  justify-content: center;
-  position: sticky;
-  width: 100%;
-}
-
-form {
-  width: 99%;
-}
-
-input {
-  background-color: rgb(28, 28, 30);
-  border-radius: 0.5rem;
-  border: none;
-  box-shadow: 0 0 0.4vw rgba(0, 0, 0, 0.5), 0 0 0 0.15vw transparent;
-  color: #fff;
-  font-size: 80%;
-  outline: none;
-  padding: 0.4vw;
-  transition: 0.4s;
-  width: 100%;
-}
-input:hover {
-  box-shadow: 0 0 0 0.15vw rgba(135, 207, 235, 0.186);
-}
-input:focus {
-  box-shadow: 0 0 0 0.15vw #42b983;
-}
-input[type="text"]::placeholder {
-  text-indent: 5px;
-}
-
-@media (width: 412px) {
-  form {
-    width: 95%;
-  }
-  input {
-    font-size: 90%;
-  }
-}
+@import "../assets/estilos.css";
 </style>

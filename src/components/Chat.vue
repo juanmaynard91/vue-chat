@@ -1,7 +1,6 @@
 <template>
   <div ref="chatRef">
-    <div v-for="item in mensajes" :key="item.id" class="card mb-3 mt-3"
-      :class="item.uid === userChat.uid ? 'mi-mensaje' : 'otro-mensaje'" style="max-width: 20rem">
+    <div v-for="item in mensajes" :key="item.id" class="card mb-3 mt-3" :class="item.uid === userChat.uid ? 'mi-mensaje' : 'otro-mensaje'">
       <div class="card-body">
         <h5 class="card-title">{{ item.displayName }}</h5>
         <p class="card-text">{{ item.text }}</p>
@@ -49,45 +48,5 @@ watchEffect((onCleanup) => {
 </script>
 
 <style>
-.card {
-  box-shadow: rgb(0 0 0 / 50%) 0 0 1rem;
-}
-
-.mi-mensaje {
-  background-color: #4AC959;
-  border-radius: 10px;
-  color: #ffff;
-  max-width: 70%;
-  padding: 10px;
-  text-align: end;
-  margin-left: auto;
-  position: relative;
-}
-.mi-mensaje::before {
-  border-bottom: 10px solid transparent;
-  border-left: 10px solid #4AC959;
-  border-top: 10px solid transparent;
-  position: absolute;
-  right: -10px;
-  top: 10px;
-  content: "";
-}
-
-.otro-mensaje {
-  background: #333333;
-  border-radius: 10px;
-  color: #ffff;
-  max-width: 70%;
-  padding: 10px;
-  position: relative;
-}
-.otro-mensaje::before {
-  border-bottom: 10px solid transparent;
-  border-right: 10px solid #333333;
-  border-top: 10px solid transparent;
-  position: absolute;
-  left: -10px;
-  top: 10px;
-  content: "";
-}
+@import "../assets/estilos.css";
 </style>
