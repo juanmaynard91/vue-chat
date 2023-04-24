@@ -11,6 +11,12 @@
 html,
 body {
   background: #202020;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -18,6 +24,7 @@ img {
 }
 
 main {
+  flex: 1;
   min-height: 100vh;
 }
 
@@ -120,6 +127,7 @@ header {
   align-items: center;
   bottom: 0;
   display: flex;
+  flex-shrink: 0;
   font-size: 2rem;
   height: 4rem;
   justify-content: center;

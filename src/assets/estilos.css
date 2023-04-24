@@ -11,6 +11,12 @@
 html,
 body {
   background: #202020;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -18,6 +24,7 @@ img {
 }
 
 main {
+  flex: 1;
   min-height: 100vh;
 }
 
@@ -125,6 +132,7 @@ header {
   align-items: center;
   bottom: 0;
   display: flex;
+  flex-shrink: 0;
   font-size: 2rem;
   height: 4rem;
   justify-content: center;
@@ -161,11 +169,11 @@ input:focus {
   box-shadow: 0 0 0 0.15vw #42b983;
 }
 
-input[type="text"]::-moz-placeholder {
+input[type=text]::-moz-placeholder {
   text-indent: 5px;
 }
 
-input[type="text"]::placeholder {
+input[type=text]::placeholder {
   text-indent: 5px;
 }
 
@@ -218,4 +226,4 @@ input[type="text"]::placeholder {
   left: -10px;
   position: absolute;
   top: 10px;
-} /*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */
