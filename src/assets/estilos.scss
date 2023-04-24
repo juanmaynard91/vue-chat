@@ -129,7 +129,10 @@ header {
 }
 
 form {
+  align-items: center;
+  justify-content: center;
   width: 99%;
+  display: flex;
 }
 
 input {
@@ -138,7 +141,8 @@ input {
   border: none;
   box-shadow: 0 0 0.4vw rgba(0, 0, 0, 0.5), 0 0 0 0.15vw transparent;
   color: #fff;
-  font-size: 80%;
+  font-size: 60%;
+  height: 3.2rem;
   outline: none;
   padding: 0.4vw;
   transition: 0.4s;
@@ -170,6 +174,11 @@ input[type="text"]::placeholder {
 .card {
   box-shadow: rgb(0 0 0 / 50%) 0 0 1rem;
   width: 20rem;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .mi-mensaje {
